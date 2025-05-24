@@ -120,3 +120,24 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 });
+
+
+
+document.getElementById('theme-toggle-btn').addEventListener('click', () => {
+  document.body.classList.toggle('dark-theme');
+
+  // Save user preference to localStorage
+  if (document.body.classList.contains('dark-theme')) {
+    localStorage.setItem('theme', 'dark');
+  } else {
+    localStorage.setItem('theme', 'light');
+  }
+});
+
+// On page load, apply saved theme if any
+window.addEventListener('DOMContentLoaded', () => {
+  const savedTheme = localStorage.getItem('theme');
+  if (savedTheme === 'dark') {
+    document.body.classList.add('dark-theme');
+  }
+});

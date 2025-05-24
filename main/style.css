@@ -1,5 +1,5 @@
 *{
-    background-color: beige;
+    
 }
 #main-h1{
     display: flex;
@@ -13,6 +13,7 @@ body{
   font-family: 'Inter', sans-serif;
   text-align: center;
   margin-top: 100px;
+  background-color: beige;
 }
 
 .custom-btn{
@@ -92,4 +93,42 @@ body{
 #text-to-type {
   line-height: 2;
   letter-spacing: 1px;
+}
+
+
+
+body.dark-theme {
+      background-color: #121212;
+      color: #e0e0e0;
+    }
+
+    /* Button styles for light and dark mode */
+    button {
+      font-size: 1rem;
+      padding: 0.5rem 1rem;
+      cursor: pointer;
+      border-radius: 4px;
+      border: 1px solid #ccc;
+      background-color: white;
+      color: black;
+      transition: background-color 0.3s, color 0.3s;
+      margin-bottom: 1rem;
+    }
+    body.dark-theme button {
+      background-color: #333;
+      color: #e0e0e0;
+      border: 1px solid #555;
+    }
+    #theme-toggle-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 1000;
+  background-color: black;
+  color: beige;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
 }
