@@ -1,0 +1,95 @@
+*{
+    background-color: beige;
+}
+#main-h1{
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+    font-size: 2.6rem;
+    font-weight: bold;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+  font-family: 'Inter', sans-serif;
+  text-align: center;
+  margin-top: 100px;
+}
+
+.custom-btn{
+  background-color: black;
+  color: beige;
+  padding: 20px 40px;
+  font-size: 24px;
+  font-weight: bold;
+  border: none;
+  border-radius: 16px;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.custom-btn:hover{
+  background-color: #222;
+  transform: scale(1.05);
+}
+
+#input-box{
+  margin-top: 20px;
+  font-size: 18px;
+  padding: 10px;
+  width: 90%;
+  max-width: 600px;
+}
+
+#results{
+  margin-top: 20px;
+  font-size: 20px;
+}
+#text-to-type {
+  font-size: 16px; 
+  line-height: 1.4; 
+  max-width: 600px; 
+  margin: 0 auto; 
+  padding: 10px 15px;
+  background-color: #f9f9f9; 
+  border-radius: 8px;
+  color: #222; 
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: justify; 
+}
+#restart-btn{
+  background-color: black;
+  color: beige;
+  padding: 20px 40px;
+  font-size: 24px;
+  font-weight: bold;
+  border: none;
+  border-radius: 16px;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+#restart-btn:hover{
+  background-color: #222;
+  transform: scale(1.05);
+}
+#text-to-type span {
+  font-size: 1.2rem;
+  padding: 0 2px;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.correct {
+  color: #fff;
+  background-color: #28a745; /* Bright green */
+  font-weight: bold;
+}
+
+.incorrect {
+  color: #fff;
+  background-color: #dc3545; /* Bright red */
+  font-weight: bold;
+}
+
+#text-to-type {
+  line-height: 2;
+  letter-spacing: 1px;
+}

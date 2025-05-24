@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title><link rel="stylesheet" href="style.css"><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="main-h1">
+        <h1>Try out your speed!</h1>
+    </div>
+<div id="start-screen">
+    <button class="custom-btn" onclick="startTest()">Start Typing Test</button>
+    <p id="high-score-display" style="text-align: center;"></p>
+  </div>
+  <div id="typing-test" style="display: none;">
+    <p id="text-to-type"></p>
+    <textarea id="input-box" rows="5" cols="60" placeholder="Start typing here..."></textarea>
+    <p id="live-wpm" style="font-weight: bold; margin-top: 10px;">WPM: 0</p>
+    <p id="results"></p>
+    <button id="restart-btn" style="display:none;" onclick="restartTest()">Restart</button>
+  </div>
+  <script src="java.js"></script>
+  </body>
+
+
